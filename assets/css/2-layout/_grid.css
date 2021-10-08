@@ -1,0 +1,12 @@
+.wrapper, .wrapper--large, .wrapper--small {
+  position: relative;
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.wrapper--small {
+  width: 980px;
+}
+.wrapper--large {
+  width: 1170px;
+}
