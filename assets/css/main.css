@@ -1067,66 +1067,66 @@ input[type=button]:focus {
   }
 }
 
-/************************* Blog *************************/
-.blog {
+/************************* hobby *************************/
+.hobby {
   position: relative;
   padding: 60px 0;
 }
-.blog__wrapper {
+.hobby__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.blog__post {
+.hobby__post {
   width: 33.33%;
   margin-right: 30px;
 }
-.blog__post:last-child {
+.hobby__post:last-child {
   margin-right: 0;
 }
-.blog__post-thumbnail {
+.hobby__post-thumbnail {
   width: 100%;
   box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21);
 }
-.blog__post-thumbnail img {
+.hobby__post-thumbnail img {
   display: block;
   width: 100%;
 }
-.blog__post-excerpt h3 {
+.hobby__post-excerpt h3 {
   color: #585858;
   font-size: 24px;
 }
-.blog__view-more {
+.hobby__view-more {
   margin-top: 90px;
   text-align: center;
 }
-.blog__view-more--el {
+.hobby__view-more--el {
   padding: 8px 30px;
 }
 @media (max-width: 991px) {
-  .blog__heading {
+  .hobby__heading {
     font-size: 48px;
   }
-  .blog__wrapper {
+  .hobby__wrapper {
     flex-direction: column;
     align-items: center;
   }
-  .blog__post {
+  .hobby__post {
     width: 450px;
     max-width: 100%;
     margin: 0 0 45px 0;
   }
-  .blog__post:last-child {
+  .hobby__post:last-child {
     margin-bottom: 0;
   }
-  .blog__post-excerpt {
+  .hobby__post-excerpt {
     text-align: center;
   }
-  .blog__post-excerpt h3 {
+  .hobby__post-excerpt h3 {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 767px) {
-  .blog__heading {
+  .hobby__heading {
     font-size: 32px;
   }
 }
