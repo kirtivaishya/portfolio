@@ -567,10 +567,10 @@ input[type=button]:focus {
     background-color: #585858;
     transition: transform 0.4s, opacity 0.2s 0.2s;
   }
-  .navigation__burger-el--top {
+  .navigation__burger--top {
     transform-origin: left top;
   }
-  .navigation__burger-el--bottom {
+  .navigation__burger--bottom {
     transform-origin: left bottom;
   }
 }
