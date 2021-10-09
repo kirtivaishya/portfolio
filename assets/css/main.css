@@ -426,30 +426,39 @@ input[type=button]:focus {
   text-align: center;
 }
 
-@keyframes fadeInOut
-	0%
-		opacity: 1
-	50%
-		opacity: .5
-	100%
-		opacity: 1
-
-@keyframes scrollDown
-	0%
-		transform: translate(-12px, 0px)
-		opacity: 0
-	75%
-		transform: translate(-12px, 45px)
-		opacity: 1
-	100%
-		transform: translate(-12px, 45px)
-		opacity: 0
-		
-@keyframes scaleUp
-	0%
-		transform: scale(.95)
-	100%
-		transform: scale(1);
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scrollDown {
+  0% {
+    transform: translate(-12px, 0px);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(-12px, 45px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-12px, 45px);
+    opacity: 0;
+  }
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .navigation {
   position: absolute;
   width: 100%;
@@ -477,7 +486,7 @@ input[type=button]:focus {
   text-transform: uppercase;
   transition: color 0.2s ease-in-out;
 }
-.navigation:hover {
+.navigation > li a:hover {
   color: #787878;
 }
 .navigation__burger {
@@ -502,27 +511,27 @@ input[type=button]:focus {
     visibility: hidden;
     transition: visibility 0s 0.4s, opacity 0.4s;
   }
-  .navigation--is-open {
+  .navigation__container--is-open {
     opacity: 1;
     visibility: visible;
     transition: visibility 0s, opacity 0.4s;
   }
-  .navigation .navigation__list > li:nth-child(1) a {
+  .navigation__container .navigation__list > li:nth-child(1) a {
     transition: transform 0.2s 0.4s, color 0.2s ease-in-out;
   }
-  .navigation .navigation__list > li:nth-child(2) a {
+  .navigation__container .navigation__list > li:nth-child(2) a {
     transition: transform 0.2s 0.6s, color 0.2s ease-in-out;
   }
-  .navigation .navigation__list > li:nth-child(3) a {
+  .navigation__container .navigation__list > li:nth-child(3) a {
     transition: transform 0.2s 0.8s, color 0.2s ease-in-out;
   }
-  .navigation .navigation__list > li:nth-child(4) a {
+  .navigation__container .navigation__list > li:nth-child(4) a {
     transition: transform 0.2s 1s, color 0.2s ease-in-out;
   }
-  .navigation .navigation__list a {
+  .navigation__container .navigation__list a {
     transform: translateY(0);
   }
-  .navigation .navigation__list:hover {
+  .navigation__container .navigation__list:hover {
     color: #c4c4c4;
   }
   .navigation__list {
@@ -567,10 +576,10 @@ input[type=button]:focus {
     background-color: #585858;
     transition: transform 0.4s, opacity 0.2s 0.2s;
   }
-  .navigation__burger--top {
+  .navigation__burger-el--top {
     transform-origin: left top;
   }
-  .navigation__burger--bottom {
+  .navigation__burger-el--bottom {
     transform-origin: left bottom;
   }
 }

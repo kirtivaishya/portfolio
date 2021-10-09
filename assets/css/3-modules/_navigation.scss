@@ -24,10 +24,11 @@
 			color: $c-secondary;
 			text-transform: uppercase;
 			transition: color .2s ease-in-out;
-		    }
+		   
 			&:hover{
 				color: darken($c-secondary, 15%);
 			}	
+		}
 	&__burger{
 		display: none
 	}
@@ -51,7 +52,7 @@
 			opacity: 0;
 			visibility: hidden;
 			transition: visibility 0s .4s, opacity .4s;
-		}
+		
 			&--is-open{
 				opacity: 1;
 				visibility: visible;
@@ -74,7 +75,7 @@
 								color: lighten($c-secondary, 15%);
 							}
 				}			
-
+			}		
 			
 		&__list{
 			height: 250px;
@@ -122,7 +123,7 @@
 				height: 3px;
 				background-color: $c-primary;
 				transition: transform .4s, opacity .2s .2s;
-			    }
+			    
 				&--top{
 					transform-origin: left top;
 				}
@@ -130,8 +131,9 @@
 					transform-origin: left bottom;
 				}
 			}
-		}		
-	}
+		}
+	}		
+}
 
 					
 .scroll-lock{
