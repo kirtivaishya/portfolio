@@ -21,17 +21,17 @@
 		justify-content: space-between;
 	}
 		& > li a {
-			color: $c-secondary;
-			text-transform: uppercase;
-			transition: color .2s ease-in-out;
+			color: $c-secondary
+			text-transform: uppercase
+			transition: color .2s ease-in-out
 		    }
 			&:hover{
-				color: darken($c-secondary, 15%);
+				color: darken($c-secondary, 15%)
 			}	
 	&__burger{
 		display: none
 	}
-	
+}	
 	@media (max-width: 991px){
 	
 		&__cta{
@@ -67,12 +67,11 @@
 						}
 					}	
 					
-						& a{
-							transform: translateY(0);
-						}
-							&:hover{
-								color: lighten($c-secondary, 15%);
-							}
+						& a
+							transform: translateY(0)
+							
+							&:hover
+								color: lighten($c-secondary, 15%)
 				}			
 
 			
@@ -80,7 +79,7 @@
 			height: 250px;
 			flex-direction: column;
 			align-items: center;
-		
+		}
 			& > li{
 				overflow: hidden;
 			}
@@ -122,17 +121,15 @@
 				height: 3px;
 				background-color: $c-primary;
 				transition: transform .4s, opacity .2s .2s;
-			    }
+				
 				&--top{
 					transform-origin: left top;
 				}
 				&--bottom{
 					transform-origin: left bottom;
 				}
-			}
-		}		
+			}	
 	}
-
 					
 .scroll-lock{
 	position: fixed;
@@ -140,5 +137,4 @@
 	height: 100%;
 	overflow: hidden;
 }
-
 	

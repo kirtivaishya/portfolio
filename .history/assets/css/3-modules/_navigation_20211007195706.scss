@@ -80,7 +80,7 @@
 			height: 250px;
 			flex-direction: column;
 			align-items: center;
-		
+		}
 			& > li{
 				overflow: hidden;
 			}
@@ -122,23 +122,20 @@
 				height: 3px;
 				background-color: $c-primary;
 				transition: transform .4s, opacity .2s .2s;
-			    }
+				
 				&--top{
 					transform-origin: left top;
 				}
 				&--bottom{
 					transform-origin: left bottom;
 				}
-			}
-		}		
+			}	
 	}
-
-					
-.scroll-lock{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
-
+}					
+// .scroll-lock{
+// 	position: fixed;
+// 	width: 100%;
+// 	height: 100%;
+// 	overflow: hidden;
+// }
 	
